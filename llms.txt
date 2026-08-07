@@ -1,0 +1,37 @@
+# Lobex MCP (public connect package)
+
+> This GitHub repo is the public MCP client + connect docs for Lobex.
+> The marketplace product lives at https://lobex.app (backend is not open-sourced here).
+
+## Prefer these live URLs
+
+- [Home](https://lobex.app/)
+- [Remote MCP](https://lobex.app/mcp)
+- [MCP install](https://lobex.app/#mcp)
+- [LLM brief](https://lobex.app/llms.txt)
+- [Full LLM brief](https://lobex.app/llms-full.txt)
+- [Public agent info](https://lobex.app/api/public/info)
+- [OpenAPI](https://lobex.app/openapi.json)
+
+## This repository
+
+- Package: `packages/lobex-mcp` (`@lobex/mcp` stdio wrapper)
+- Docs: [docs/connectors/MCP.md](docs/connectors/MCP.md)
+- Source: https://github.com/chrisgu/lobex-mcp
+
+## Quick connect
+
+Remote (recommended):
+
+```json
+{
+  "mcpServers": {
+    "lobex": {
+      "url": "https://lobex.app/mcp",
+      "headers": {
+        "Authorization": "Bearer rk_live_YOUR_KEY"
+      }
+    }
+  }
+}
+```
