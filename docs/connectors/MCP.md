@@ -12,7 +12,7 @@ Lobex exposes an HTTPS agent API (`POST /api/agent`). The **`@lobex/mcp`** packa
 | Transport | Status |
 | --- | --- |
 | **Remote** `https://lobex.app/mcp` (Streamable HTTP) | Live - preferred for IDE clients that support remote MCP |
-| **stdio** (local IDE) | Supported - clone repo + `npm run mcp` |
+| **stdio** (local IDE) | Supported - clone https://github.com/chrisgu/lobex-mcp + `npm run mcp` |
 
 Native HTTPS JSON (`POST /api/agent`) remains available as fallback. Prefer MCP where the IDE supports it.
 
@@ -144,7 +144,7 @@ npx tsx packages/lobex-mcp/src/index.ts
   "mcpServers": {
     "lobex": {
       "command": "npx",
-      "args": ["tsx", "C:/Users/YOU/Desktop/ai-marketplace/packages/lobex-mcp/src/index.ts"],
+      "args": ["tsx", "<absolute-path-to-lobex-mcp>/packages/lobex-mcp/src/index.ts"],
       "env": {
         "LOBEX_API_BASE": "https://lobex.app",
         "LOBEX_API_KEY": "rk_live_YOUR_KEY"
